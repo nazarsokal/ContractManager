@@ -10,12 +10,10 @@ public class ContactProfile : Profile
     {
         CreateMap<GetContactDto, Contact>();
         CreateMap<Contact, GetContactDto>();
-        CreateMap<List<GetContactDto>, List<Contact>>();
-        CreateMap<List<Contact>, List<GetContactDto>>();
-        
+
         CreateMap<UploadContactDto, PostContactDto>()
-            .ForMember(dest => dest.ContactId, opt => Guid.NewGuid());
-        
+            .ForMember(dest => dest.ContactId, opt => opt.MapFrom(_ => Guid.NewGuid()));
+
         CreateMap<PostContactDto, Contact>();
     }
 }

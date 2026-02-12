@@ -1,4 +1,4 @@
-@model List<ContactManager.DTO.UploadContactDto>
+@model List<ContactManager.DTO.UploadContactDto>?
 
 @{
     Layout = null;
@@ -6,13 +6,82 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="">
 <head>
-    <title>title</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Contacts</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
 </head>
 <body>
-<div>
-      
-</div>
+    <div class="container mt-5">
+        <h1 class="mb-4">Upload Contacts from CSV</h1>
+        
+        <div class="card mb-4">
+            <div class="card-body">
+                <form method="post" asp-controller="Home" asp-action="Upload" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="csvFile" class="form-label">Choose CSV File</label>
+                        <input type="file" class="form-control" id="csvFile" name="file" accept=".csv" required />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Upload</button>
+                </form>
+            </div>
+        </div>
+
+        @if (Model != null && Model.Count > 0)
+        {
+            <form method="post" asp-controller="Home" asp-action="Add">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">Uploaded Contacts</h5>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-striped table-hover">
+                            <thead class="table-dark">
+                            <tr>
+                                <th>Name</th>
+                                <th>Date of Birth</th>
+                                <th>Is Married</th>
+                                <th>Phone</th>
+                                <th>Salary</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @for (int i = 0; i < Model.Count; i++)
+                            {
+                                <tr>
+                                    <td>
+                                        @Model[i].Name
+                                        <input type="hidden" name="contacts[@i].Name" value="@Model[i].Name" />
+                                    </td>
+                                    <td>
+                                        @Model[i].DateOfBirth.ToString("yyyy-MM-dd")
+                                        <input type="hidden" name="contacts[@i].DateOfBirth" value="@Model[i].DateOfBirth.ToString("yyyy-MM-dd")" />
+                                    </td>
+                                    <td>
+                                        @(Model[i].IsMarried ? "Yes" : "No")
+                                        <input type="hidden" name="contacts[@i].IsMarried" value="@Model[i].IsMarried" />
+                                    </td>
+                                    <td>
+                                        @Model[i].Phone
+                                        <input type="hidden" name="contacts[@i].Phone" value="@Model[i].Phone" />
+                                    </td>
+                                    <td>
+                                        @Model[i].Salary.ToString("F2")
+                                        <input type="hidden" name="contacts[@i].Salary" value="@Model[i].Salary" />
+                                    </td>
+                                </tr>
+                            }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        }
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

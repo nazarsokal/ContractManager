@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using ContactManager.DTO;
 using ContactManager.Models;
 using ContactManager.ServiceContracts;
 using Microsoft.AspNetCore.Mvc;
@@ -30,6 +31,23 @@ public class HomeController : Controller
         
         return View(processedContacts);
     }
+    
+    [Route("upload")]
+    [HttpGet]
+    public IActionResult Upload()
+    {
+        return View();
+    }
+    
+    [Route("add")]
+    [HttpPost]
+    public async Task<IActionResult> Add(List<PostContactDto> contacts)
+    {
+        var result = await _contactService.AddContactToDbAsync(contacts);
+        
+        return RedirectToAction("Index");
+    }
+    
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

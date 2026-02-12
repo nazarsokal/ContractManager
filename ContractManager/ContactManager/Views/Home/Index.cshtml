@@ -7,11 +7,36 @@
     <h1 class="display-4">Welcome</h1>
     @if (@Model.Count == 0)
     {
-        <p>empty</p>
+        <p>No contacts available</p>
+        <form method="get" action="@Url.Action("Upload", "Home")">
+            <button type="submit" class="btn btn-primary">Add Sample Contacts</button>
+        </form>
     }
     else
     {
-        <p>not empty</p>
+        <table class="table table-striped table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>Name</th>
+                    <th>Date of Birth</th>
+                    <th>Is Married</th>
+                    <th>Phone</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var contact in Model)
+                {
+                    <tr>
+                        <td>@contact.Name</td>
+                        <td>@contact.DateOfBirth.ToString("yyyy-MM-dd")</td>
+                        <td>@(contact.IsMarried ? "Yes" : "No")</td>
+                        <td>@contact.Phone</td>
+                        <td>@contact.Salary.ToString("C")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
     }
     
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>

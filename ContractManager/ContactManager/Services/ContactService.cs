@@ -20,6 +20,11 @@ public class ContactService : IContactService
     
     public async Task<int> AddContactToDbAsync(List<PostContactDto> contacts)
     {
+        foreach (var contact in contacts)
+        {
+            contact.ContactId = Guid.NewGuid();
+        }
+        
         var contactEntities = _mapper.Map<List<Contact>>(contacts);
         _context.Contacts.AddRange(contactEntities);
         return await _context.SaveChangesAsync();
