@@ -36,8 +36,26 @@ public class ContactService : IContactService
         return _mapper.Map<List<GetContactDto>>(contacts);
     }
 
-    public Task DeleteContactAsync(Guid id)
+    public Task<int> DeleteContactAsync(Guid id)
     {
-        throw new NotImplementedException();
+        var contact = _context.Contacts.Find(id);
+        if (contact != null)
+        {
+            _context.Contacts.Remove(contact);
+            return _context.SaveChangesAsync();
+        }
+        else
+        {
+            return Task.FromResult(0);
+        }
+    }
+
+    public async Task<int> UpdateContactAsync(Guid id, UpdateContactDto? updateContact)
+    {
+        var updatedContact = _mapper.Map<Contact>(updateContact);
+        updatedContact.ContactId = id;
+        
+        _context.Contacts.Update(updatedContact);
+        return await _context.SaveChangesAsync();
     }
 }

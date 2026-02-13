@@ -1,8 +1,7 @@
 namespace ContactManager.DTO;
 
-public class GetContactDto
+public class UpdateContactDto
 {
-    public Guid ContactId { get; set; }
     public string Name { get; set; }
     
     public DateTime DateOfBirth { get; set; }

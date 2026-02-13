@@ -9,31 +9,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01cc81e0-f33a-4d5a-a76a-06f858b596a2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ContractManager/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ContractManager/.idea/copilot.data.migration.agent.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ContractManager/.idea/copilot.data.migration.ask.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ContractManager/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ContractManager/.idea/copilot.data.migration.edit.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ContractManager/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ContractManager/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ContractManager/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContactManager/ContactManager.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/ContactManager.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ContactManager/DTO/UpdateContactDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ContractManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ContractManager/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContactManager/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContactManager/DTO/UploadContactDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/DTO/UploadContactDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContactManager/DTO/GetContactDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/DTO/GetContactDto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContactManager/Mapper/ContactProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/Mapper/ContactProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContactManager/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContactManager/ServiceContracts/IContactService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/ServiceContracts/IContactService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContactManager/Services/ContactService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/Services/ContactService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContactManager/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/Views/Home/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContactManager/Views/Home/Upload.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/Views/Home/Upload.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContactManager/bin/Debug/net8.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContactManager/bin/Debug/net8.0/ContactManager.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/bin/Debug/net8.0/ContactManager.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContactManager/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContactManager/Views/Shared/_Layout.cshtml.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ContactManager/bin/Debug/net8.0/ContactManager.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/bin/Debug/net8.0/ContactManager.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContactManager/bin/Debug/net8.0/ContactManager.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/bin/Debug/net8.0/ContactManager.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContactManager/obj/ContactManager.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/obj/ContactManager.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContactManager/bin/Debug/net8.0/ContactManager.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/bin/Debug/net8.0/ContactManager.staticwebassets.runtime.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContactManager/obj/Debug/net8.0/ContactManager.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/obj/Debug/net8.0/ContactManager.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContactManager/obj/Debug/net8.0/ContactManager.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/obj/Debug/net8.0/ContactManager.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContactManager/obj/Debug/net8.0/ContactManager.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/obj/Debug/net8.0/ContactManager.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContactManager/obj/Debug/net8.0/ContactManager.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/obj/Debug/net8.0/ContactManager.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContactManager/obj/Debug/net8.0/ContactManager.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/obj/Debug/net8.0/ContactManager.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContactManager/obj/Debug/net8.0/ContactManager.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/obj/Debug/net8.0/ContactManager.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContactManager/obj/Debug/net8.0/ContactManager.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/obj/Debug/net8.0/ContactManager.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContactManager/obj/Debug/net8.0/ContactManager.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/obj/Debug/net8.0/ContactManager.dll" afterDir="false" />
@@ -41,12 +33,14 @@
       <change beforePath="$PROJECT_DIR$/ContactManager/obj/Debug/net8.0/ContactManager.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/obj/Debug/net8.0/ContactManager.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContactManager/obj/Debug/net8.0/ref/ContactManager.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/obj/Debug/net8.0/ref/ContactManager.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContactManager/obj/Debug/net8.0/refint/ContactManager.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/obj/Debug/net8.0/refint/ContactManager.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContactManager/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContactManager/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContactManager/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContactManager/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContactManager/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContractManager.sln" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContactManager/obj/Debug/net8.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContactManager/obj/Debug/net8.0/scopedcss/projectbundle/ContactManager.bundle.scp.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContactManager/obj/Debug/net8.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/obj/Debug/net8.0/staticwebassets.build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContactManager/obj/Debug/net8.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/obj/Debug/net8.0/staticwebassets.development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContactManager/obj/Debug/net8.0/staticwebassets.pack.json" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/obj/Debug/net8.0/staticwebassets.pack.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContactManager/obj/Debug/net8.0/staticwebassets/msbuild.ContactManager.Microsoft.AspNetCore.StaticWebAssets.props" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/obj/Debug/net8.0/staticwebassets/msbuild.ContactManager.Microsoft.AspNetCore.StaticWebAssets.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContactManager/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/wwwroot/css/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContactManager/wwwroot/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/ContactManager/wwwroot/js/site.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +67,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.ContractManager: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.ContractManager: http.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -125,7 +119,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1770797824464</updated>
-      <workItem from="1770797826982" duration="13083000" />
+      <workItem from="1770797826982" duration="19476000" />
     </task>
     <servers />
   </component>
@@ -146,5 +140,24 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ContactManager/Controllers/HomeController.cs</url>
+          <line>65</line>
+          <properties documentPath="$PROJECT_DIR$/ContactManager/Controllers/HomeController.cs" containingFunctionPresentation="Method 'Delete'">
+            <startOffsets>
+              <option value="1765" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1823" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

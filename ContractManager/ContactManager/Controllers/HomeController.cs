@@ -5,7 +5,7 @@ using ContactManager.ServiceContracts;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ContactManager.Controllers;
-
+ 
 public class HomeController : Controller
 {
     private readonly ICsvProcessingService _csvProcessingService;
@@ -48,10 +48,23 @@ public class HomeController : Controller
         return RedirectToAction("Index");
     }
     
-
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
+    [Route("update/{id}")]
+    [HttpPut]
+    public async Task<IActionResult> Update(Guid id, UpdateContactDto? updateContact)
     {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        if (updateContact == null)
+            return BadRequest("DTO is null");
+
+        await _contactService.UpdateContactAsync(id, updateContact);
+        return Ok();
+    }
+
+    [HttpDelete]
+    [Route("delete/{id}")]
+    public async Task<IActionResult> Delete(Guid id)
+    {
+        var result = await _contactService.DeleteContactAsync(id);
+        
+        return RedirectToAction("Index");
     }
 }

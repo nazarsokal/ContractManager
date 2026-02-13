@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "/Users/asokalch/Documents/GitHub/ContractManager/ContractManager/ContactManager/obj/Debug/net8.0/scopedcss/projectbundle/ContactManager.bundle.scp.css",
-      "PackagePath": "staticwebassets/ContactManager.bundle.scp.css"
-    },
-    {
       "Id": "/Users/asokalch/Documents/GitHub/ContractManager/ContractManager/ContactManager/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },

@@ -9,5 +9,7 @@ public interface IContactService
     
     public Task<List<GetContactDto>> GetAllContactsAsync();
     
-    public Task DeleteContactAsync(Guid id);
+    public Task<int> DeleteContactAsync(Guid id);
+
+    public Task<int> UpdateContactAsync(Guid id, UpdateContactDto? updateContact);
 }

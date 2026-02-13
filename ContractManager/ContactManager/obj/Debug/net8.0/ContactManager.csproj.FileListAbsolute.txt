@@ -78,9 +78,7 @@
 /Users/asokalch/Documents/GitHub/ContractManager/ContractManager/ContactManager/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.ContactManager.props
 /Users/asokalch/Documents/GitHub/ContractManager/ContractManager/ContactManager/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.ContactManager.props
 /Users/asokalch/Documents/GitHub/ContractManager/ContractManager/ContactManager/obj/Debug/net8.0/staticwebassets.pack.json
-/Users/asokalch/Documents/GitHub/ContractManager/ContractManager/ContactManager/obj/Debug/net8.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /Users/asokalch/Documents/GitHub/ContractManager/ContractManager/ContactManager/obj/Debug/net8.0/scopedcss/bundle/ContactManager.styles.css
-/Users/asokalch/Documents/GitHub/ContractManager/ContractManager/ContactManager/obj/Debug/net8.0/scopedcss/projectbundle/ContactManager.bundle.scp.css
 /Users/asokalch/Documents/GitHub/ContractManager/ContractManager/ContactManager/obj/Debug/net8.0/ContactM.30CBC4AA.Up2Date
 /Users/asokalch/Documents/GitHub/ContractManager/ContractManager/ContactManager/obj/Debug/net8.0/ContactManager.dll
 /Users/asokalch/Documents/GitHub/ContractManager/ContractManager/ContactManager/obj/Debug/net8.0/refint/ContactManager.dll

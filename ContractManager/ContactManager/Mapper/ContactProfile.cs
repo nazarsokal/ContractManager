@@ -15,5 +15,7 @@ public class ContactProfile : Profile
             .ForMember(dest => dest.ContactId, opt => opt.MapFrom(_ => Guid.NewGuid()));
 
         CreateMap<PostContactDto, Contact>();
+        
+        CreateMap<UpdateContactDto, Contact>();
     }
 }
